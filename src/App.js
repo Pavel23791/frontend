@@ -10,7 +10,7 @@ const App = () => {
   }, [])
 
   const loadData = () => {
-    axios.get('http://localhost:5000/api/users')
+    axios.get('http://3.95.11.63:5000/api/users')
     .then(res => {
       setUsers(res.data.users)
     })
